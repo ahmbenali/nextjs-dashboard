@@ -1,5 +1,3 @@
-import { CustomerField } from '@/app/lib/types';
-import { Button } from '@/app/ui/button';
 import {
   CheckIcon,
   ClockIcon,
@@ -7,6 +5,8 @@ import {
   UserCircleIcon,
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
+import { CustomerField } from '~/lib/types';
+import { Button } from '~/ui/button';
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
   return (

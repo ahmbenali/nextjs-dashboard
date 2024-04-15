@@ -1,7 +1,7 @@
-import { FormattedCustomersTable } from '@/app/lib/types';
-import { lusitana } from '@/app/ui/fonts';
-import Search from '@/app/ui/search';
 import Image from 'next/image';
+import { FormattedCustomersTable } from '~/lib/types';
+import { lusitana } from '~/ui/fonts';
+import Search from '~/ui/search';
 
 export default async function CustomersTable({
   customers,
