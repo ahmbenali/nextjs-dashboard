@@ -1,11 +1,18 @@
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+import '@/app/ui/global.css';
+import { PropsWithChildren } from 'react';
+import { inter } from './ui/fonts';
+
+function RootLayout({ children }: PropsWithChildren) {
+  // prettier-ignore
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={`antialiased ${inter.className} `}
+       >
+        {children}
+      </body>
     </html>
   );
 }
+
+export default RootLayout;
